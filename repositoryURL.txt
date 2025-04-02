@@ -1,0 +1,3 @@
+https://github.com/nrogers90/developers.git
+
+https://github.com/nrogers90/Tech-Academy-Projects.git

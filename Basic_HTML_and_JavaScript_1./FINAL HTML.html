@@ -1,0 +1,51 @@
+<!--Basic_HTML_1.html-->
+
+<!DOCTYPE html>
+<html lang="en"
+	<head>
+		<title> Basic HTML </title>
+		<meta charset = "utf-8">
+	</head>
+
+	<body>
+		
+		<p> Admiral Ackbar </p>
+		<br>
+		<p><i>It's</i> <u>a</u> <b>Trap!</b></p>
+
+		<img src="https://static.wikia.nocookie.net/starwars/images/f/fb/Ackbar_HS.jpg/revision/latest/scale-to-width/360?cb=20241222081227" alt="Admiral Ackbar" >
+
+		<script src="Basic_Javascript_1.js"></script>
+	</body>
+</html>
+
+//Basic_JavaScript_1.js
+
+alert("Alert!");
+
+<!--Basic HTML_2.html-->
+
+<!DOCTYPE html>
+<html lang="en"
+	<head>
+		<title>BASIC HTML 2</title>
+		<meta charset = "utf-8">
+	</head>
+
+	<body>
+		<button onclick="My_First_Function()">
+		Click Me
+		</button>
+	<p id="AA"></p>
+	<script src="Basic_Javascript_2.js"></script>
+	</body>
+
+</html>
+
+//Basic_JavaScript_2.js
+
+function My_First_Function() {
+		var String = "It's a Trap!";
+		var result = String.fontcolor("orange");
+		document.getElementById("AA").innerHTML = result;
+	}
