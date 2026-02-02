@@ -65,6 +65,29 @@
   width: 100%; /* Full width */
 }
 
+
+/* Base style for mobile devices */
+body {
+  background-color: olive;
+  color: white;
+}
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(55, 215, 63);
+    color: white;
+  }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(232, 217, 197);
+    color: black;
+  }
+}
+
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -125,6 +148,29 @@
   border-radius: 25px;
 }
 
+/* 5-10 video overlay */
+.video-overlay {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.video-overlay video {
+  width: 100%;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
+
 .img-container:hover .overlay {
   opacity: 1;
 }
@@ -141,6 +187,12 @@
   text-align: center;
 }
 
+/* paragraph turns blue below 600px */
+@media screen and (max-width: 600px) {
+  p {
+    color: blue;
+  }
+}
     </style>
 
   
@@ -198,8 +250,14 @@
 
 <!-- challenge 5 - 9 (video) -->
 
-<video autoplay muted loop> <source src="Img/325502_tiny.mp4" type="video/mp4">
-</video>
+<div class="video-overlay">
+  <video autoplay muted loop>
+    <source src="Img/325502_tiny.mp4" type="video/mp4">
+  </video>
+  <div class="overlay-text">HELLO</div>
+</div>
+
+<!-- end of challenge 5 - 9 (video) -->
 
 <!-- challenge 5-7 -->
 
