@@ -1,9 +1,12 @@
-document.write("Hello, World!");
+// window alert method
+window.alert("Hello, World!");
 
 var A = "This is a string";
 
+// document write method
 document.write(A);
 
+// variables 
 var message = "Hello, World!";
 window.alert(message);
 
@@ -23,4 +26,10 @@ document.write("\"This is another quote,"
 + "which is very quotable "
 + "- The Quoter\"");
 
-"Nick" + " is learning Javascript" // this is a comment on my coding 
+// expression
+"Nick" + " is learning Javascript" 
+
+document.getElementById("btn").onclick = function() {
+    alert("Clicked!");
+};
+
