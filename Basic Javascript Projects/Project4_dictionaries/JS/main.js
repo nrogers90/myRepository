@@ -6,7 +6,7 @@ function my_Dictionary() {
         Episode: 5
     };
 
-    delete Bounty_Hunters.Species;
-    
+    delete Bounty_Hunters.Name;
+
     document.getElementById("Dictionary").innerHTML = Bounty_Hunters.Name;
 }
