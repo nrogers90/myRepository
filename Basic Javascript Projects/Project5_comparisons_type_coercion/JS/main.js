@@ -23,3 +23,19 @@ function infinity_Function() {
 function negativeInfinity_Function() {
     document.getElementById("NegativeInfinity").innerHTML = -2E310
 }
+
+function greater_than_True() {
+    document.write (10 > 2);
+}
+
+function less_than_False() {
+    document.write (10 < 2);
+}
+
+console.log(2 + 2);
+
+console.log(10 < 2);
+
+document.write(10 == 10);
+<br>
+document.write(3 == 11);
