@@ -1,7 +1,7 @@
 /***** GENERAL STYLING *****/
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
 /* Heading 1 elements */
@@ -22,7 +22,7 @@ h1:hover {
 
 /* 'About' Paragraph white colour */
 #About p {
-    color: white;
+    color: rgb(224, 53, 53);
 }
 
 /* Styling for portfolio title text */
@@ -175,7 +175,7 @@ footer {
 
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
-    #Typing_Video {
+    #Background_Video {
         display: none;
     }
 }
@@ -212,11 +212,13 @@ footer {
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
 }
 
-/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+
+
+/* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
-    .Column_1 {
-        overflow: auto;
-    }
+  #Background_Video {
+      display: none;
+  }
 }
 
 .Column_2 {
@@ -292,3 +294,83 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+/* Profile buttons */
+.profile-button {
+    display: inline-block;
+    width: 220px;
+    padding: 14px 0;          /* Same height for both */
+    margin: 10px 0;           /* Even spacing */
+    background-color: #ff2c2c;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Optima;
+    font-weight: bold;
+    border-radius: 8px;       /* Slightly rounder corners */
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #c91d1d;
+    transform: translateY(-2px);
+}
+
+/* Contact form popup */
+.Pop_Up_Button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 8;
+background-color: #ff2c2c;
+color: white;
+border: none;
+cursor: pointer;
+padding: 14px 20px;
+font-family: "Trebuchet MS", Optima;font-weight: bold;
+border-radius: 6px;
+}
+
+.form-popup {
+display: none;
+position: fixed;
+bottom: 75px;
+right: 20px;
+z-index: 9;
+max-width: 320px;
+border: 3px solid #f1f1f1;
+}
+
+.form-container {
+max-width: 320px;
+padding: 15px;
+background-color: white;
+}
+
+.form-container input[type=text] {
+width: 100%;
+padding: 12px;
+margin: 5px 0 12px 0;
+border: none;
+background: #f1f1f1;
+box-sizing: border-box;
+}
+
+.form-container input[type=submit], .form-container .cancel {
+background-color: #ff2c2c;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.form-container .cancel {
+background-color: #333;
+}
+
+.form-container input[type=submit]:hover, .form-container .cancel:hover, .Pop_Up_Button:hover {
+opacity: 0.85;
+}
